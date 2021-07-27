@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+
+    /* Fuente */
+    --fontFamily: 'Karla', sans-serif;
+    --fontSize: 16px;
+
+    /* primary colors */
+
+    --cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+
+    /* neutral colors */
+
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+}
+
+html {
+    font-size: var(--fontSize);
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontFamily);
+    background: var(--lightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 55%;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .header-container {
+    height: 40%;
+    padding: 45px;
+    font-weight: bold;
+    background: white;
+}
+
+.header-container h1 {
+    color: var(--cyan);
+    margin-bottom: 30px;
+}
+
+.header-container h2 {
+    color: var(--brightYellow);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.header-container p {
+    color: var(--grayishBlue);
+    margin-bottom: 15px;
+}
+
+.container .bottom-section {
+    height: 60%;
+    display: flex;
+    color: var(--lightGray);
+    
+}
+
+.bottom-section article {
+    width: 50%;
+    padding: 45px;
+}
+
+.price {
+    background: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.price h3 {
+    font-size: 1.4rem;
+}
+
+.price .dollar {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.dollar span {
+    font-size: 1rem;
+    margin-left: 5px;
+    color: hsl(204deg 43% 93% / 45%);
+}
+
+button {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--brightYellow);
+    margin-top: 15px;
+    color: white;
+    font-size: 1rem;
+    -webkit-box-shadow: 0px 4px 13px 4px #4caf50; 
+    box-shadow: 0px 4px 13px 4px #4caf50;
+    cursor: pointer;
+}
+
+button:hover {
+    color:hsl(71, 73%, 54%);
+    background: var(--lightGray);
+}
+
+.aboutUs {
+    background-color: hsl(179 62% 47% / 1);
+}
+
+.aboutUs h3 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.aboutUs ul {
+    list-style-type: none;
+}
+
+.aboutUs ul li {
+    margin-bottom: 5px;
+    color: hsl(204deg 43% 93% / 69%);
+}
